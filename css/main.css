@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header a {
+    display: flex;
+    align-items: left;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+article {
+    width: 350px;
+    height: auto;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+}
+h3{
+    color:blueviolet;
+    text-align: center;
+    margin-top:37px;
+    font-size: 35px;
+}
+@media (max-width: 670px) {
+    header{
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header>a{
+        font-size: 45px;
+        margin:20px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin: 5px;
+    }
+    li{
+        background-color: blueviolet;
+        font-size: 15px;
+        border-radius: 10%;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+    }
+
+}
+/* O media abaixo é para limitar o tamanho máximo da imagem quando a tela for muito extensa, senão a imagem ocuparia praticamente a tela inteira do usuário, esse foi o modo que encontrei de limitar a imagem do mesmo modo que o vídeo que foi enviado pelo professor.*/
+@media (min-width:1810px){
+
+    article:nth-child(6) {
+        width: 800px;
+        max-width: 800px;
+        height: 400px;
+        flex-grow: 2;    
+    }
+
+
+}
